@@ -87,7 +87,18 @@ public class Basics {
         ///hence the execution will reach this statement since our number is a prime number
         System.out.println("It is a Prime number");
 
+    }
 
+    //a program to swap 2 numbers
+    public static void swapTwoNumbers(int a,int b) {
+
+        //to swap two number we need to create a temporary variable to hold one number
+        int temp = a;
+
+        a = b;
+        b = temp;
+
+        System.out.println("Value of int a is " + a +" and value of int b is " + b );
     }
 
 

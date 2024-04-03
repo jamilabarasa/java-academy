@@ -57,6 +57,39 @@ public class Basics {
 
     }
 
+    //a program to check whether a number is prime number or not
+    public static void checkPrimeNumber(int number) {
+
+        //what is a prime number
+        //{odd number is a number has a reminder when divided by 2 and even number has no reminder when divided by 2}
+        // prime number is a number that is divided by 1 and itself ,for example 3 ,that means the reminder is 0 when it is divided by 1 or itself
+
+        //loop through the digits from 2{why from 2 ,we cannot divide a number by 0 ,and also we already know this number has to be divided by 1} to numbers/2,
+        // inside the loop check if the reminder is 0 when divided by the numbers smaller from half of the number
+
+        //1 is not a prime number ,stop the execution of the function if number is equal to 1
+        if (number == 1) {
+            System.out.println("It is not a Prime number");
+            return;
+        }
+
+        for (int i = 2; i <= number / 2; i++) {
+
+            if (number % i == 0) {
+                System.out.println("It is not a Prime number");
+                return;
+            }
+
+
+        }
+
+        //if the loop finishes successfully without breaking(return statement), that means our number has reminders that are not 0
+        ///hence the execution will reach this statement since our number is a prime number
+        System.out.println("It is a Prime number");
+
+
+    }
+
 
 
 }

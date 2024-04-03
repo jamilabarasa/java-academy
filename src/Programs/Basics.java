@@ -26,4 +26,37 @@ public class Basics {
 
     }
 
+
+    //a program to print fibonacci numbers
+    public static void fibonacciNumbers(int num){
+
+        //the first fibonacci numbers are 0 and 1
+        //to get a nth fibonacci number : f(n) = f(n-1) + f(n-2)
+        //so to print all fibonacci number from 0,1 to the nth which is num
+        //create a loop that starts counting from 0 to num
+
+        //starting from 3 because we already know the first two fibonacci numbers
+        int y = 3;
+        int first_fibonacci = 0;
+        int second_fibonacci = 1;
+        int next_fibonacci = 0;
+        System.out.print(first_fibonacci + " ");
+        System.out.print(second_fibonacci + " ");
+
+        while (y <= num){
+            //firt number will become the second number
+            //second numbe will become the previous results
+            next_fibonacci = first_fibonacci + second_fibonacci;
+            first_fibonacci = second_fibonacci;
+            second_fibonacci = next_fibonacci;
+            System.out.print(next_fibonacci + " ");
+            y++;
+        }
+
+
+
+    }
+
+
+
 }

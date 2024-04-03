@@ -1,5 +1,7 @@
+import Programs.Basics;
+
 public class Main {
     public static void main(String[] args) {
-        learn.reverseNumber(123456789);
+        Basics.reverseNumber(123456789);
     }
 }

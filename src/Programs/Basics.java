@@ -1,4 +1,6 @@
-public class learn {
+package Programs;
+
+public class Basics {
 
     // a program reverse a number
     public static void reverseNumber(int number) {

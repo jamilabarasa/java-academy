@@ -1,6 +1,6 @@
 package Programs;
 
-public class Basics {
+public class BasicPrograms {
 
     // a program reverse a number
     public static void reverseNumber(int number) {
@@ -100,6 +100,13 @@ public class Basics {
 
         System.out.println("Value of int a is " + a +" and value of int b is " + b );
     }
+
+
+
+
+
+
+    
 
 
 

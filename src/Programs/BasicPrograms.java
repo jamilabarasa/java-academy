@@ -91,7 +91,6 @@ public class BasicPrograms {
 
     //a program to swap 2 numbers
     public static void swapTwoNumbers(int a,int b) {
-
         //to swap two number we need to create a temporary variable to hold one number
         int temp = a;
 
@@ -101,6 +100,17 @@ public class BasicPrograms {
         System.out.println("Value of int a is " + a +" and value of int b is " + b );
     }
 
+    //recursion to count down
+    public static void countDown(int y){
+
+        if(y <= 0){
+            System.out.println("Blast!!!");
+            return;
+        }
+
+        System.out.println(y);
+        countDown(y-1);
+    }
 
 
 

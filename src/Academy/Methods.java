@@ -82,6 +82,8 @@ public class Methods {
     This technique provides a way of breaking down complicated problems into simple problems
     that are easier to solve
     a method calls itself to solve smaller instances of the same problem
+    infinite recursion is when a method never stops calling itself
+    every recursion should have a halting condition ,a condition where recursion func stops calling itself
     the function keeps calling itself until a certain condition is met
     function keeps calling itself with smaller values i.e (n-1) until base condition is met i.e n reaches 0
     if the recursion method has a call stack,meaning it has an operation and the return depends on the operation
@@ -160,6 +162,33 @@ The final result, 14, is the sum of numbers from 1 to 5, calculated as the recur
         return num * factorial(num - 1);
 
     }
+
+    //factorial method to add numbers from 10 backwards to 1
+    public static int add(int x) {
+
+        if (x <= 0) {
+            return 0;
+        }
+
+        return x + sum(x - 1);
+
+    }
+
+    /*
+    Static vs Public attributes and methods
+    static attributes and methods belongs to the main class,and not the  object of the main class
+    static can be accessed without creating the objects of the class
+    public can be only be accessed by creating the object of the class
+    // Static method
+  static void myStaticMethod() {
+    System.out.println("Static methods can be called without creating objects");
+  }
+
+  // Public method
+  public void myPublicMethod() {
+    System.out.println("Public methods must be called by creating objects");
+  }
+     */
 
 
 
